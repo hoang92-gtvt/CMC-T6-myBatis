@@ -19,17 +19,6 @@ import java.sql.SQLException;
 public class DataSourceConfig {
 
 
-//    @Bean(name="dataSoure")
-////    @Primary
-//    public DataSource dataSource() {
-//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-//        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-//        dataSource.setUrl("jdbc:mysql://localhost:3306/demomybatic");
-//        dataSource.setUsername("root");
-//        dataSource.setPassword("123456");
-//        System.out.println("tao duoc datasoure");
-//        return dataSource;
-//    }
 
 
     @Bean(name="dataSoure")
