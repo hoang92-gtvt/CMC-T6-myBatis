@@ -6,21 +6,21 @@
 
     <resultMap id = "resultUser" type = "com.cmc.testConfig.model.User">
         <!--<result property = "serialVersionUID" column = "serialVersionUID"/>-->
-        <result property = "id" column = "id"/>
-        <result property = "name" column = "name"/>
-        <result property = "password" column = "password"/>
-        <result property = "time" column = "time"/>
+        <result property = "id" column = "ID"/>
+        <result property = "name" column = "NAME"/>
+        <result property = "password" column = "PASSWORD"/>
+        <result property = "time" column = "TIME"/>
 
     </resultMap>
 
 
     <select id = "findById" parameterType = "long" resultMap = "resultUser">
-        SELECT * FROM USERS WHERE ID = #{id};
+        SELECT * FROM USERSDEMO WHERE ID = #{id};
     </select>
 
 
     <select id="findAll" resultMap="resultUser">
-        select * from users;
+        select * from USERSDEMO;
     </select>
 
 
