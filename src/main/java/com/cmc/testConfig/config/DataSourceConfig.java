@@ -33,21 +33,6 @@ public class DataSourceConfig {
         return dataSource;
     }
 
-//        @Bean
-//    public DataSource dataSource() throws SQLException {
-//            HikariConfig hikariConfig = new HikariConfig();
-//            hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-//            hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:database2");
-//            hikariConfig.setUsername("hr");
-//            hikariConfig.setPassword("h123");
-//
-//            HikariDataSource dataSource = new HikariDataSource(hikariConfig);
-//
-//        return dataSource;
-//    }
-
-
-
 
     @Bean(name="transactionManager")
     public DataSourceTransactionManager transactionManager() throws SQLException {
@@ -84,7 +69,18 @@ public class DataSourceConfig {
     }
 
 
-
+//        @Bean
+//    public DataSource dataSource() throws SQLException {
+//            HikariConfig hikariConfig = new HikariConfig();
+//            hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+//            hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:database2");
+//            hikariConfig.setUsername("hr");
+//            hikariConfig.setPassword("h123");
+//
+//            HikariDataSource dataSource = new HikariDataSource(hikariConfig);
+//
+//        return dataSource;
+//    }
 
 
 

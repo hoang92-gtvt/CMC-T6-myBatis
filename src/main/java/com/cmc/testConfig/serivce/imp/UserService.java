@@ -1,15 +1,12 @@
 package com.cmc.testConfig.serivce.imp;
 
 import com.cmc.testConfig.mapper.IUserMapper;
-import com.cmc.testConfig.mapper.UserMapper;
 import com.cmc.testConfig.model.User;
 import com.cmc.testConfig.serivce.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-//@Service("userService")
 
 @Service
 public class UserService implements IUserService {
