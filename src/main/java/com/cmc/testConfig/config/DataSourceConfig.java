@@ -29,7 +29,7 @@ public class DataSourceConfig {
         dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:database2");
         dataSource.setUsername("hr");
         dataSource.setPassword("h123");
-        System.out.println("tao duoc datasoure");
+
         return dataSource;
     }
 
@@ -49,8 +49,10 @@ public class DataSourceConfig {
 //        sqlSessionFactoryBean.setConfigLocation(pathMyBatisConfig .getResource("classpath:/WEB-INF/conf/mybatis-config.xml"));
 
 
-        PathMatchingResourcePatternResolver pathM3R = new PathMatchingResourcePatternResolver();
-        sqlSessionFactoryBean.setMapperLocations(pathM3R.getResources("classpath:mapper/*.xml"));
+//        PathMatchingResourcePatternResolver pathM3R = new PathMatchingResourcePatternResolver();
+//        sqlSessionFactoryBean.setMapperLocations(pathM3R.getResources("classpath:mapper/*.xml"));
+
+
         System.out.println("tao duoc sql session");
         return sqlSessionFactoryBean;
     }
@@ -64,7 +66,7 @@ public class DataSourceConfig {
         mapperScannerConfigurer.setBasePackage("com.cmc.testConfig.mapper");
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactoryBean");
 
-        System.out.println("tao duoc mapper");
+        System.out.println("Khai bao noi quest cac annotation mapper");
         return mapperScannerConfigurer;
     }
 
