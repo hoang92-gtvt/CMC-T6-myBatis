@@ -19,46 +19,17 @@ import java.sql.SQLException;
 public class DataSourceConfig {
 
 
-//    @Bean(name="dataSoure")
-////    @Primary
-//    public DataSource dataSource() {
-//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-//        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-//        dataSource.setUrl("jdbc:mysql://localhost:3306/demomybatic");
-//        dataSource.setUsername("root");
-//        dataSource.setPassword("123456");
-//        System.out.println("tao duoc datasoure");
-//        return dataSource;
-//    }
-
-
     @Bean(name="dataSoure")
 //    @Primary
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-        dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:database2");
-        dataSource.setUsername("hr");
-        dataSource.setPassword("h123");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/demomybatic");
+        dataSource.setUsername("root");
+        dataSource.setPassword("123456");
         System.out.println("tao duoc datasoure");
         return dataSource;
     }
-
-//        @Bean
-//    public DataSource dataSource() throws SQLException {
-//            HikariConfig hikariConfig = new HikariConfig();
-//            hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-//            hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:database2");
-//            hikariConfig.setUsername("hr");
-//            hikariConfig.setPassword("h123");
-//
-//            HikariDataSource dataSource = new HikariDataSource(hikariConfig);
-//
-//        return dataSource;
-//    }
-
-
-
 
     @Bean(name="transactionManager")
     public DataSourceTransactionManager transactionManager() throws SQLException {
@@ -95,6 +66,30 @@ public class DataSourceConfig {
     }
 
 
+    //    @Bean(name="dataSoure")
+////    @Primary
+//    public DataSource dataSource() {
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+//        dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:database2");
+//        dataSource.setUsername("hr");
+//        dataSource.setPassword("h123");
+//        System.out.println("tao duoc datasoure");
+//        return dataSource;
+//    }
+
+//        @Bean
+//    public DataSource dataSource() throws SQLException {
+//            HikariConfig hikariConfig = new HikariConfig();
+//            hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+//            hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:database2");
+//            hikariConfig.setUsername("hr");
+//            hikariConfig.setPassword("h123");
+//
+//            HikariDataSource dataSource = new HikariDataSource(hikariConfig);
+//
+//        return dataSource;
+//    }
 
 
 

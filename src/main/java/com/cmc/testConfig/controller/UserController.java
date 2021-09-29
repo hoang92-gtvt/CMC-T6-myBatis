@@ -3,6 +3,7 @@ package com.cmc.testConfig.controller;
 import com.cmc.testConfig.model.User;
 import com.cmc.testConfig.serivce.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +16,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-
-    private IUserService userService ;
+   private IUserService userService ;
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public ModelAndView home() {
