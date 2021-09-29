@@ -46,14 +46,16 @@ public class DataSourceConfig {
 //        sqlSessionFactoryBean.setConfigLocation(pathMyBatisConfig .getResource("classpath:/WEB-INF/conf/mybatis-config.xml"));
 
 
+//        day la noi khai bao resource chua các file mapper.xml
         PathMatchingResourcePatternResolver pathM3R = new PathMatchingResourcePatternResolver();
         sqlSessionFactoryBean.setMapperLocations(pathM3R.getResources("classpath:mapper/*.xml"));
+
+
         System.out.println("tao duoc sql session");
         return sqlSessionFactoryBean;
     }
 
-
-
+    // day la noi khai bao cac package chưa mapper.class
     @Bean(name="mapper")
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer =

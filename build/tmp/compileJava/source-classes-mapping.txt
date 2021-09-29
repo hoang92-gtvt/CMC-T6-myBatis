@@ -2,8 +2,8 @@ com/cmc/testConfig/serivce/IUserService.java
  com.cmc.testConfig.serivce.IUserService
 com/cmc/testConfig/config/DispatcherConfig.java
  com.cmc.testConfig.config.DispatcherConfig
-com/cmc/testConfig/serivce/imp/UserService.java
- com.cmc.testConfig.serivce.imp.UserService
+com/cmc/testConfig/config/AppConfig.java
+ com.cmc.testConfig.config.AppConfig
 com/cmc/testConfig/config/DataSourceConfig.java
  com.cmc.testConfig.config.DataSourceConfig
 com/cmc/testConfig/model/User.java
@@ -16,5 +16,5 @@ com/cmc/testConfig/controller/UserController.java
  com.cmc.testConfig.controller.UserController
 com/cmc/testConfig/config/UserConfig.java
  com.cmc.testConfig.config.UserConfig
-com/cmc/testConfig/config/AppConfig.java
- com.cmc.testConfig.config.AppConfig
+com/cmc/testConfig/serivce/imp/UserService.java
+ com.cmc.testConfig.serivce.imp.UserService

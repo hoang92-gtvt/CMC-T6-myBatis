@@ -1,6 +1,6 @@
 package com.cmc.testConfig.serivce.imp;
 
-import com.cmc.testConfig.mapper.IUserMapper;
+//import com.cmc.testConfig.mapper.IUserMapper;
 import com.cmc.testConfig.mapper.UserMapper;
 import com.cmc.testConfig.model.User;
 import com.cmc.testConfig.serivce.IUserService;

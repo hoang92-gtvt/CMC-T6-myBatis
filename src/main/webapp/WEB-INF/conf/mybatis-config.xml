@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <typeAliases>
+        <package name="com.cmc.testConfig"/>
+    </typeAliases>
+
+
+<!--&lt;!&ndash;    khai bao các file sqlMapper.xml, or folder file.xml  lan 2&ndash;&gt;-->
+<!--    <mappers>-->
+<!--        <package name="com.cmc.testConfig.mapper"/>-->
+<!--    </mappers>-->
+<!--&lt;!&ndash;    // da test doc lap 2 cai nhung ko chay dc&ndash;&gt;-->
+
+</configuration>
